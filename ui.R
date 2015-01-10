@@ -4,8 +4,8 @@ shinyUI(
   pageWithSidebar(
     headerPanel("Weight versus age of chicks on different diets"),
     sidebarPanel(
-      h4('The body weights of the chicks were measured at birth and every second day thereafter until day 20. They were also measured on day 21. There were four groups on chicks on different protein diets.'),
-      h4('Select the diet and age in days (1-21) and we shall show you the corresponding average  weight(gm)'),
+      h4('The body weights of the chicks were measured at birth and every SECOND day (therefore use only even number for TIME) thereafter until day 20. They were also measured on day 21. There were four groups on chicks on different protein diets.'),
+      h4('Select the diet and time (i.e. their age in days) (range:0-21) and we shall show you the corresponding average  weight(gm)'),
       
       h3("Enter the data"),
       

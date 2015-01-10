@@ -1,16 +1,10 @@
 fx <- function(x,y) {
   
   data <- ChickWeight
-  
-  
-  tmp <- data[data$Diet == x   , ]
-  
-  
-  tmp <- data[data$Diet == x &
-                data$Time <= y, ]
-  
-  
-  out <- mean(tmp$weight)
+  z <- data[data$Diet == x   , ]  
+  z <- data[data$Diet == x &
+                data$Time == y, ]
+  out <- mean(z$weight)
   return (out)
 }
 
